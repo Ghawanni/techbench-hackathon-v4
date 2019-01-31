@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
+import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { CardComponent } from './card/card.component';
 
 @NgModule({
@@ -14,7 +15,8 @@ import { CardComponent } from './card/card.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AngularFontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
