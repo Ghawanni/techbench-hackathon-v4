@@ -4,16 +4,18 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
-import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { ShowcaseComponent } from './showcase/showcase.component';
 import { CardComponent } from './card/card.component';
+import { AngularFontAwesomeModule } from 'angular-font-awesome';
+import { InfoSectionComponent } from './info-section/info-section.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     ShowcaseComponent,
-    CardComponent
+    CardComponent,
+    InfoSectionComponent
   ],
   imports: [
     BrowserModule,
