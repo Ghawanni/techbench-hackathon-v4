@@ -6,8 +6,8 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { ShowcaseComponent } from './showcase/showcase.component';
 import { CardComponent } from './card/card.component';
-import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { InfoSectionComponent } from './info-section/info-section.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -15,12 +15,12 @@ import { InfoSectionComponent } from './info-section/info-section.component';
     HeaderComponent,
     ShowcaseComponent,
     CardComponent,
-    InfoSectionComponent
+    InfoSectionComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    AngularFontAwesomeModule
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
