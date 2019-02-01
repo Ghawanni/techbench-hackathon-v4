@@ -1,0 +1,24 @@
+div{
+  width: 100%;
+  display: inline-block;
+  justify-content: center;
+  flex-direction: column;
+  background-color: crimson; 
+  transform: skewY(7deg);
+  padding: 5em;
+  margin-top: 4em;
+
+  *{
+    transform: skewY(-7deg);
+  }
+
+  img{
+    display: block;
+    max-height: 150px;
+    margin: auto;
+  }
+  p{
+    display: inline-block;
+    text-align: center;
+  }
+}
