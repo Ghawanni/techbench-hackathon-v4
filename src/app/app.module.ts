@@ -8,6 +8,7 @@ import { ShowcaseComponent } from './showcase/showcase.component';
 import { CardComponent } from './card/card.component';
 import { InfoSectionComponent } from './info-section/info-section.component';
 import { FooterComponent } from './footer/footer.component';
+import { RegistrationComponent } from './registration/registration.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { FooterComponent } from './footer/footer.component';
     ShowcaseComponent,
     CardComponent,
     InfoSectionComponent,
-    FooterComponent
+    FooterComponent,
+    RegistrationComponent
   ],
   imports: [
     BrowserModule,
