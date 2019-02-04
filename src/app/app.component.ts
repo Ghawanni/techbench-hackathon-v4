@@ -15,8 +15,6 @@ export class AppComponent {
 
   @HostListener('window:scroll', ['$event'])
   onWindowScroll(e) {
-    console.log('hey');
-    
     if (window.pageYOffset > 500) {
       let element = document.getElementById('header');
       element.classList.add('sticky');

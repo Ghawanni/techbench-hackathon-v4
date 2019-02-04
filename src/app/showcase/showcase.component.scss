@@ -1,4 +1,4 @@
-@import '../../palette.scss';
+@import '../../global.scss';
 
 .showcase-container {
   width: 100%;
@@ -35,11 +35,19 @@
     // padding: 2em;
     // border-radius: 30px;
 
+    @include phone() {
+      width: 80%;
+    }
+
     h1 {
       font-size: 5rem;
       font-weight: 400;
       color: #fff;
       margin: 0;
+
+      @include phone() {
+        font-size: 3rem;
+      }
     }
 
     p {
@@ -58,6 +66,12 @@
 
     .button {
       margin-top: 7em;
+
+      @include phone() {
+        width: 120px;
+        margin-top: 7em;
+        padding: 1em;
+      }
     }
   }
 }

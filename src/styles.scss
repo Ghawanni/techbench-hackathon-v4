@@ -1,5 +1,5 @@
 
-@import '/palette.scss';
+@import '/global.scss';
 
 //  * {
 //      border: 1px solid salmon;
@@ -17,6 +17,10 @@ body, html {
   font-family: 'century-gothic';
   background: #eaeaea;
   // overflow-x: hidden;
+
+  @include phone() {
+    font-size: 90%;
+  }
 }
 
 .button {
@@ -52,6 +56,10 @@ body, html {
   width: 70%;
   margin: 5em auto;
   min-height: 70vh;
+
+  @include phone() {
+    width: 90%;    
+  }
 }
 
 .main-heading {

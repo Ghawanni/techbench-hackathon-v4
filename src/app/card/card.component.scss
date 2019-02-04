@@ -1,9 +1,18 @@
-@import '../../palette.scss';
+@import '../../global.scss';
 
 .cards {
     display: flex;
     width: 80%;
     margin: auto;
+
+    @include medium-screen() {
+        width: 100%;
+    }
+
+    @include phone() {
+        flex-direction: column;
+        width: 90%;
+    }
 
     .card {
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -14,8 +23,13 @@
         padding: 2em;
         margin: 2em;
         text-align: center; 
-        animation: float 6s ease-in-out infinite;
+        animation: float 5s ease-in-out infinite;
         border-radius: 1em;
+
+        @include phone() {
+            margin: 1em!important;
+            animation: unset;
+        }
 
         i {
             font-size: 4rem;
@@ -56,6 +70,10 @@
     border-radius: 10px;
     transform: translateY(-150px);
     box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+
+    @include phone() {
+        padding: 4em 1em;
+    }
 }
     
 #first{
@@ -75,7 +93,7 @@
 		transform: translatey(0px);
 	}
 	50% {
-		box-shadow: 0 18px 25px 0px rgba(0, 0, 0, 0.2);
+		box-shadow: 0 18px 25px 0px rgba(0, 0, 0, 0.15);
 		transform: translatey(-20px);
 	}
 	100% {

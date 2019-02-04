@@ -1,3 +1,5 @@
+@import '../../global.scss';
+
 .info-section {
   transform: skewY(-5deg);
   // background-image: url('../../assets/images/cover.jpg');
@@ -26,7 +28,12 @@
     p {
       font-size: 1.2rem;
       color: #fff;
-      margin: 3em 
+      margin: 3em;
+      
+      @include phone() {
+        font-size: 1.1rem;
+        margin: 2em 1em;
+      }
     }
   }
 }
