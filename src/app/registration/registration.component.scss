@@ -2,7 +2,7 @@
   height: 20%;
   padding: 10%; 
 }
-.container{
+.registre-container{
   background-color: purple;
   margin-top: auto;
   transform: skewY(6deg);
@@ -16,4 +16,8 @@
     color: white;
     transform: skewY(-6deg);
   }
+}
+
+.container {
+  min-height: 50vh;
 }
