@@ -7,12 +7,12 @@
   padding: 2em 0;
 
   .overlay {
-    background-image: linear-gradient(to bottom right, rgb(29, 29, 29), rgb(89, 131, 156));
+    background-image: linear-gradient(to bottom left, rgb(29, 29, 29), rgb(89, 131, 156));
     height: 100%;
     width: 100%;
     position: absolute;
     top: 0;
-  }
+    }
 
   .container {
     transform: skewY(5deg);
